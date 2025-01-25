@@ -39,7 +39,7 @@ Route::post('/backend/contacts/update/{id}', [ContactController::class, 'updateS
 
 // Feedback routes
 Route::get('/feedback', [FeedbackController::class, 'front'])->name('feedback');
-Route::post('/feedback', [FeedbackController::class, 'store'])->name('feedback.store');
+Route::post('/feedback', [FeedbackController::class, 'feedback'])->name('feedback.store');
 
 // Weather routes
 Route::get('/weather', [WeatherController::class, 'getWeather']);
